@@ -84,6 +84,7 @@ public class LoadObjects : MonoBehaviour {
                 GameObject model = Instantiate(Model) as GameObject;
                 model.name = go.name + "." + model.name;
                 go.GetComponent<TrackingHandler>().Model = model; 
+                // Change String from Script
             }
         }
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
     <Tracking>
-        <CylinderTarget name="RocketBooster" sideLength="0.114980"/>
-        <ImageTarget name="Astronaut" size="0.069850 0.120650"/>
-        <ImageTarget name="Drone" size="0.069850 0.120650"/>
+        <CylinderTarget name="5411188100835" sideLength="0.114980"/>
+        <ImageTarget name="3021769505619" size="0.069850 0.120650"/>
+        <ImageTarget name="5053827203760" size="0.069850 0.120650"/>
         <ImageTarget name="Fissure" size="0.069850 0.120650"/>
         <ImageTarget name="Oxygen" size="0.069850 0.120650"/>
         <ImageTarget name="MarsBox.Top" size="0.076200 0.038100"/>

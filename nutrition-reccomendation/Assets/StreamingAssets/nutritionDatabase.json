@@ -1,0 +1,36 @@
+{
+    "databaseName": "Nutrition Database",
+    "data": [
+        {
+            "id": "5411188100835",
+            "product_name": "Lait d'amande",
+            "brands": "Alpro",
+            "main_category_fr": ["Produit laitier", "Végétale", "Boisson"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": "24"
+
+        },
+
+        {
+            "id": "3021769505619",
+            "product_name": "Pom'potes pomme fraise",
+            "brands": "Materne",
+            "main_category_fr": ["Fruits", "Végétale", "Purée", "Compote"],
+            "nutrition_grade_fr": "A" ,
+            "nutrition_score_fr_100g": "A" ,
+            "energy_kcal_100g": "55"
+        },
+
+        {
+            "id": "5053827203760",
+            "product_name": "Extra",
+            "brands": "Kellogs",
+            "main_category_fr": ["Céréales", "Petit déjeuner", "Chocolat"],
+            "nutrition_grade_fr": "D" ,
+            "nutrition_score_fr_100g": "D" ,
+            "energy_kcal_100g": "497"
+        }
+    ]
+    
+}

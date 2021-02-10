@@ -81,7 +81,7 @@ public class TrackingHandler : MonoBehaviour
 
     private void PlaceModelOnImageTarget() {
             Model.transform.parent = mTrackableBehaviour.transform; // Attach Model to trackable
-            Model.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            Model.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Model.transform.localPosition = new Vector3(0.0f, 0.05f, 0.0f);
             Model.transform.localRotation = Quaternion.identity;
     }
