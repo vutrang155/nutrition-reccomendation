@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\ListGenerationBehaviour.cs" />
      <Compile Include="Assets\LoadObjects.cs" />
      <Compile Include="Assets\NutriscoreBehaviour.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -283,14 +284,14 @@
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>D:/Projects/nutrition-reccomendation/nutrition-reccomendation/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Vuforia.UnityExtensions">
         <HintPath>D:/Projects/nutrition-reccomendation/nutrition-reccomendation/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>D:/Projects/nutrition-reccomendation/nutrition-reccomendation/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>D:/Projects/nutrition-reccomendation/nutrition-reccomendation/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

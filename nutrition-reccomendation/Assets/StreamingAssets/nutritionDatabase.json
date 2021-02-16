@@ -2,7 +2,8 @@
     "databaseName": "Nutrition Database",
     "data": [
         {
-            "id": "5411188100835",
+            //"id": "5411188100835",
+            "id": "Fissure",
             "product_name": "Lait d'amande",
             "brands": "Alpro",
             "main_category_fr": ["Produit laitier", "Végétale", "Boisson"],
@@ -13,7 +14,8 @@
         },
 
         {
-            "id": "3021769505619",
+            //"id": "3021769505619",
+            "id": "Astronaut",
             "product_name": "Pom'potes pomme fraise",
             "brands": "Materne",
             "main_category_fr": ["Fruits", "Végétale", "Purée", "Compote"],
@@ -23,7 +25,8 @@
         },
 
         {
-            "id": "5053827203760",
+            //"id": "5053827203760",
+            "id": "Drone",
             "product_name": "Extra",
             "brands": "Kellogs",
             "main_category_fr": ["Céréales", "Petit déjeuner", "Chocolat"],

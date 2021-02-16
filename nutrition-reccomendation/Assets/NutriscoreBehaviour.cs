@@ -60,7 +60,7 @@ namespace ProductFactory
                         }
                     }
 
-                    if (!found) throw new Exception("ProductID not found");
+                    if (!found) throw new Exception("ProductID " + ID + " not found");
                 }
             }
             catch (Exception e)
@@ -106,9 +106,11 @@ public class NutriscoreBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (ProductID == "") ProductID = "Fissure";
+
         // Load ProductID
         ProductFactory.Factory f = new ProductFactory.Factory();
-        ProductFactory.Product p = f.chargeProduct("5053827203760");
+        ProductFactory.Product p = f.chargeProduct(ProductID);
         // TODO : make Product ID
         // ProductFactory.Product p = f.chargeProduct(ProductID);
 

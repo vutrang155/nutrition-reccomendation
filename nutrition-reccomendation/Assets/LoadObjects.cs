@@ -83,8 +83,11 @@ public class LoadObjects : MonoBehaviour {
                 // Clone Model and add Model to ImageTarget
                 GameObject model = Instantiate(Model) as GameObject;
                 model.name = go.name + "." + model.name;
+                // model.AddComponent<NutriscoreBehaviour>();
+                model.GetComponent<NutriscoreBehaviour>().ProductID = trackable.TrackableName;
                 go.GetComponent<TrackingHandler>().Model = model; 
-                // Change String from Script
+                // Change ProductID from Script
+                go.GetComponent<TrackingHandler>();
             }
         }
     }
