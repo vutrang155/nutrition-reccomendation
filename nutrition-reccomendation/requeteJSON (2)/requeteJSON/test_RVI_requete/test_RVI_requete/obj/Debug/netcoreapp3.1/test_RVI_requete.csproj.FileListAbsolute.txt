@@ -1,0 +1,13 @@
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/test_RVI_requete
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/test_RVI_requete.deps.json
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/test_RVI_requete.runtimeconfig.json
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/test_RVI_requete.runtimeconfig.dev.json
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/test_RVI_requete.dll
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/test_RVI_requete.pdb
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/obj/Debug/netcoreapp3.1/test_RVI_requete.csprojAssemblyReference.cache
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/obj/Debug/netcoreapp3.1/test_RVI_requete.AssemblyInfoInputs.cache
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/obj/Debug/netcoreapp3.1/test_RVI_requete.AssemblyInfo.cs
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/obj/Debug/netcoreapp3.1/test_RVI_requete.dll
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/obj/Debug/netcoreapp3.1/test_RVI_requete.pdb
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/emiliabenelguemar/Desktop/Polytech/ET5/RVI/TP/requeteJSON/test_RVI_requete/test_RVI_requete/obj/Debug/netcoreapp3.1/test_RVI_requete.csproj.CopyComplete

@@ -1,0 +1,168 @@
+{
+    "databaseName": "Nutrition Database",
+    "data": [
+        {
+            "id": "5411188100835",
+            "product_name": "Lait d'amande",
+            "brands": "Alpro",
+            "main_category_fr": ["Boisson", "Végétale", "Produit laitier", "Amande"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": 24
+
+        },
+
+        {
+            "id": "5411188112709",
+            "product_name": "Lait d'amande sans sucre",
+            "brands": "Alpro",
+            "main_category_fr": ["Boisson", "Végétale", "Produit laitier", "Amande"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": 13
+
+        },
+
+        {
+            "id": "5411188110842",
+            "product_name": "Lait de noisette",
+            "brands": "Alpro",
+            "main_category_fr": ["Boisson", "Végétale", "Produit laitier", "Noisette"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": 29
+
+        },
+
+        {
+            "id": "3428274180049",
+            "product_name": "Lait demi-écrémé",
+            "brands": "Lactel",
+            "main_category_fr": ["Boisson", "Animal", "Produit laitier", "Vache"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": 46
+
+        },
+
+        {
+            "id": "5411188128311",
+            "product_name": "Lait de coco sans sucre",
+            "brands": "Alpro",
+            "main_category_fr": ["Boisson", "Végétale", "Produit laitier", "Coco"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": 14
+
+        },
+
+        {
+            "id": "5411188115472",
+            "product_name": "Lait de soja",
+            "brands": "Alpro",
+            "main_category_fr": ["Boisson", "Végétale", "Produit laitier", "Soja"],
+            "nutrition_grade_fr": "A" ,
+            "nutrition_score_fr_100g": "A" ,
+            "energy_kcal_100g": 39
+
+        },
+
+        {
+            "id": "3021769505619",
+            "product_name": "Pom'potes pomme fraise",
+            "brands": "Materne",
+            "main_category_fr": ["Compote", "Fruits", "Purée", "Fraise"],
+            "nutrition_grade_fr": "A" ,
+            "nutrition_score_fr_100g": "A" ,
+            "energy_kcal_100g": 55
+        },
+
+        {
+            "id": "3560071260156",
+            "product_name": "Il Délicio Original",
+            "brands": "Carrefour",
+            "main_category_fr": ["Gateau", "Moelleux", "Chocolat", "Couche"],
+            "nutrition_grade_fr": "D" ,
+            "nutrition_score_fr_100g": "D" ,
+            "energy_kcal_100g": 370
+
+        },
+
+        {
+            "id": "3017760290692",
+            "product_name": "Napolitain",
+            "brands": "LU",
+            "main_category_fr": ["Gateau", "Moelleux", "Chocolat", "Couche"],
+            "nutrition_grade_fr": "E" ,
+            "nutrition_score_fr_100g": "E" ,
+            "energy_kcal_100g": 428
+
+        },
+
+        {
+            "id": "3660140944359",
+            "product_name": "P'tit Savane roulo",
+            "brands": "Brossard",
+            "main_category_fr": ["Gateau", "Moelleux", "Chocolat", "Rouler"],
+            "nutrition_grade_fr": "C" ,
+            "nutrition_score_fr_100g": "C" ,
+            "energy_kcal_100g": 345
+
+        },
+
+        {
+            "id": "3017760314497",
+            "product_name": "Pépito mini roulés",
+            "brands": "lU",
+            "main_category_fr": ["Gateau", "Moelleux", "Chocolat", "Rouler"],
+            "nutrition_grade_fr": "D" ,
+            "nutrition_score_fr_100g": "D" ,
+            "energy_kcal_100g": 390
+
+        },
+
+        {
+            "id": "3660140869850",
+            "product_name": "P'tit Savane fourrage",
+            "brands": "Brossard",
+            "main_category_fr": ["Gateau", "Moelleux", "Chocolat", "Fourrer"],
+            "nutrition_grade_fr": "D" ,
+            "nutrition_score_fr_100g": "D" ,
+            "energy_kcal_100g": 473
+
+        },
+
+        {
+            "id": "3760094310375",
+            "product_name": "Mon biscuit BIO citron",
+            "brands": "Aline & Olivier",
+            "main_category_fr": ["Gateau", "Sec", "Citron", "BIO"],
+            "nutrition_grade_fr": "B" ,
+            "nutrition_score_fr_100g": "B" ,
+            "energy_kcal_100g": 439
+
+        },
+
+        {
+            "id": "3560070111251",
+            "product_name": "Coco'liss",
+            "brands": "Carrefour",
+            "main_category_fr": ["Gateau", "Moelleux", "Chocolat", "Couche"],
+            "nutrition_grade_fr": "D" ,
+            "nutrition_score_fr_100g": "D" ,
+            "energy_kcal_100g": 425
+
+        },
+
+        {
+            "id": "5053827203760",
+            "product_name": "Extra",
+            "brands": "Kellogs",
+            "main_category_fr": ["Céréales", "Petit déjeuner", "Chocolat"],
+            "nutrition_grade_fr": "D" ,
+            "nutrition_score_fr_100g": "D" ,
+            "energy_kcal_100g": 497
+        }
+    ]
+    
+}

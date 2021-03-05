@@ -5,7 +5,9 @@ using Vuforia;
 
 public class TrackingHandler : MonoBehaviour
 {
+    public string ProductID;
     public GameObject Model;
+    public ListGenerationBehaviour Subscriber;
 
     private TrackableBehaviour mTrackableBehaviour;
     private TrackableBehaviour.Status m_PreviousStatus;
@@ -69,19 +71,21 @@ public class TrackingHandler : MonoBehaviour
 
     protected virtual void OnTrackingFound() {
         if (mTrackableBehaviour && Model) {
-            PlaceModelOnImageTarget();
             Model.SetActive(true);
+            PlaceModelOnImageTarget();
+            Subscriber.notify(this, true);
         }
     }
     protected virtual void OnTrackingLost() {
         if (mTrackableBehaviour && Model) {
+            Subscriber.notify(this, false);
             Model.SetActive(false);
         }
     }
 
     private void PlaceModelOnImageTarget() {
             Model.transform.parent = mTrackableBehaviour.transform; // Attach Model to trackable
-            Model.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            Model.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
             Model.transform.localPosition = new Vector3(0.0f, 0.05f, 0.0f);
             Model.transform.localRotation = Quaternion.identity;
     }

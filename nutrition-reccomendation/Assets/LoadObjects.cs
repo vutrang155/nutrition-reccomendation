@@ -6,6 +6,7 @@ using System.Linq;
 
 public class LoadObjects : MonoBehaviour {
     public GameObject Model;
+    public ListGenerationBehaviour s;
 
     void Start() {
         // Add Call back to check when Vuforia is ready
@@ -20,7 +21,7 @@ public class LoadObjects : MonoBehaviour {
 
         // Set working directory to access to dataset
         // Site : https://docs.unity3d.com/Manual/StreamingAssets.html
-        string file = "Vuforia/VuforiaMars_Images.xml";
+        string file = "Vuforia/nutrition-reccommendation__OT.xml";
         string path = Application.streamingAssetsPath + "/" + file;
 
         if(LoadDataSet(path, VuforiaUnity.StorageType.STORAGE_ABSOLUTE))
@@ -85,7 +86,9 @@ public class LoadObjects : MonoBehaviour {
                 model.name = go.name + "." + model.name;
                 // model.AddComponent<NutriscoreBehaviour>();
                 model.GetComponent<NutriscoreBehaviour>().ProductID = trackable.TrackableName;
+                go.GetComponent<TrackingHandler>().ProductID = trackable.TrackableName;
                 go.GetComponent<TrackingHandler>().Model = model; 
+                go.GetComponent<TrackingHandler>().Subscriber = s;
                 // Change ProductID from Script
                 go.GetComponent<TrackingHandler>();
             }

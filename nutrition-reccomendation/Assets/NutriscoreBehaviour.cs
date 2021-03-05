@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using Newtonsoft.Json;
 using TMPro; // Text Mesh Pro
 
@@ -19,6 +18,8 @@ namespace ProductFactory
         public string NutriScore_100g { get; set; }
         public int KCal_100g { get; set; }
 
+        public List<Product> OtherProducts { get; set; } = new List<Product>();
+
         public Product()
         {
             Categories = new List<string>();
@@ -29,9 +30,20 @@ namespace ProductFactory
             Categories = new List<string>();
         }
 
+        public Product(string id, string name, string brand, List<string> categories, string nutriscore, string nutriscore_100, int kcal)
+        {
+            this.ID = id;
+            this.Name = name;
+            this.Brand = brand;
+            this.Categories = categories;
+            this.NutriScore = nutriscore;
+            this.NutriScore_100g = nutriscore_100;
+            this.KCal_100g = kcal;
+        }
+
         public void searchProduct()
         {
-            string filePath = Application.streamingAssetsPath + "/nutritionDatabase.json";
+            string filePath = Application.streamingAssetsPath + "/nutritionDatabase_final.json";
             try
             {
                 //peut etre besoin de changer le chemin en fonction de votre config
@@ -58,6 +70,22 @@ namespace ProductFactory
                             NutriScore_100g = (string) product["nutrition_score_fr_100g"];
                             KCal_100g = (int) product["energy_kcal_100g"];
                         }
+                        else {
+                            string _ID = (string) product["id"];
+                            string _Name = (string) product["product_name"];
+                            string _Brands = (string) product["brands"];
+                            List<string> _list = new List<string>();
+                            foreach (string c in product["main_category_fr"])
+                            {
+                                _list.Add(c);
+                            }
+                            string _Nutrition_grade_fr = (string) product["nutrition_grade_fr"];
+                            string _Nutrition_score_fr_100g = (string) product["nutrition_score_fr_100g"];
+                            int _Energy_kcal_100g = (int) product["energy_kcal_100g"];
+
+                            Product p = new Product(_ID, _Name, _Brands, _list, _Nutrition_grade_fr, _Nutrition_score_fr_100g, _Energy_kcal_100g);
+                            OtherProducts.Add(p);
+                        }
                     }
 
                     if (!found) throw new Exception("ProductID " + ID + " not found");
@@ -77,6 +105,44 @@ namespace ProductFactory
             Product product = new Product(ID_detected);
             product.searchProduct();
             return product;
+        }
+        
+        public List<Product> sortList(List<Product> l)
+        {
+            var sortedList = l.OrderBy(si => si.KCal_100g).ToList();
+            var sortedListBeta = sortedList.OrderBy(si => si.NutriScore).ToList();
+            return sortedListBeta;
+        }
+
+         //sort a DICTIONARY by nutriscore & energy 
+        public Dictionary<Product, int> productSortDictionary_nutriscoreANDenergy(Dictionary<Product, int> l)
+        {
+            Dictionary<Product, int> sortedDict = new Dictionary<Product, int>();
+            foreach(var item in l.OrderBy(key => key.Key.KCal_100g)){
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            Dictionary<Product, int> sortedDict_beta = new Dictionary<Product, int>();
+            foreach (var item in sortedDict.OrderBy(key => key.Key.NutriScore))
+            {
+                sortedDict_beta.Add(item.Key, item.Value);
+            }
+
+            return sortedDict_beta;
+        }
+
+        
+        //sort a DICTIONARY by categories 
+        public Dictionary<Product, int> productSort_categories(Dictionary<Product, int> l)
+        {
+            Dictionary<Product, int> sortedDict = new Dictionary<Product, int>();
+
+            foreach (var item in l.OrderByDescending(key => key.Value))
+            {
+                sortedDict.Add(item.Key, item.Value);
+            }
+
+            return sortedDict;
         }
     }
 
@@ -106,7 +172,11 @@ public class NutriscoreBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (ProductID == "") ProductID = "Fissure";
+        // Hide object :
+        this.gameObject.SetActive(true);
+        
+        if (ProductID == "") ProductID = "5411188100835";
+
 
         // Load ProductID
         ProductFactory.Factory f = new ProductFactory.Factory();
@@ -130,10 +200,8 @@ public class NutriscoreBehaviour : MonoBehaviour
         else {
             Material bad = Resources.Load("Materials/bad", typeof(Material)) as Material;
             Emoji.GetComponent<MeshRenderer>().material = bad; 
-
         }
     }
-
     // Update is called once per frame
     void Update()
     {
